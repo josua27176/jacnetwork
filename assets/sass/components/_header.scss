@@ -1,0 +1,10 @@
+.header {
+  background: url("../images/header.png");
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .header-inner {
+    position: relative;
+    top: 100px;
+  }
+}

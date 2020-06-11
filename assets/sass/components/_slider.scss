@@ -1,0 +1,13 @@
+.swiper-slide {
+  .announcement-slide {
+    position: relative;
+    img {
+      border-radius: 15px;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 25px;
+      padding: 0 25px;
+    }
+  }
+}

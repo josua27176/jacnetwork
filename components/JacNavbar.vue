@@ -11,10 +11,11 @@
                 <li class="nav-item mr-5"><router-link to="/" class="nav-link">Store</router-link></li>
                 <li class="nav-item mr-5"><router-link to="/" class="nav-link">Votes</router-link></li>
                 <li class="nav-item mr-5"><router-link to="/" class="nav-link">Support</router-link></li>
-                <li class="nav-item mr-5 button"><router-link to="/" class="nav-link"></router-link></li>
+                <li class="nav-item mr-5 button"><router-link to="/" class="nav-link"><i class="fa fa-discord-alt mr-2" aria-hidden="true"></i>
+                 Discord </router-link></li>
             </ul>
             <div class="d-lg-none">
-                <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation" :class="{ 'is-active': displayMobileMenu }"  @click="toggleHamburger">
+                <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation" :class=""  @click="">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
@@ -22,7 +23,7 @@
             </div>
         </div>
         <transition name="fade">
-            <div v-show="displayMobileMenu" class="row d-lg-none mobile-nav mx-auto py-4">
+            <div v-show="" class="row d-lg-none mobile-nav mx-auto py-4">
                 <ul class="m-0 p-0 list-unstyled text-center mx-auto">
 
                 </ul>

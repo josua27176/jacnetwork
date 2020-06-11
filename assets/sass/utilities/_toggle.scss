@@ -1,0 +1,49 @@
+.button-blue {
+  width: 150px;
+  border-radius: 200px;
+  background-color: $blue;
+  transition: .4s;
+  a {
+    color: $white;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: #1f6bb5;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.button-outline {
+  border: solid 2px $white;
+  width: 150px;
+  border-radius: 120px;
+  transition: .4s;
+  a {
+    color: $white;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: $white;
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+.link-default {
+  color: $blue;
+  transition: .4s;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}
