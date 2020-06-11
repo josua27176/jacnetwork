@@ -1,0 +1,38 @@
+//  Sizes
+.fs-10 { font-size: 10px; }
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-20 { font-size: 20px; }
+.fs-24 { font-size: 24px; }
+.fs-30 { font-size: 30px; }
+.fs-36 {
+  line-height: 1.5;
+  font-size: 36px; }
+.fs-40 { font-size: 40px; }
+.fs-48 { font-size: 48px; }
+.fs-55 { font-size: 55px;}
+//  Weights
+.fw-200 { font-weight: 200; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+
+// Colors
+.font-white { color: $white; }
+.font-dark { color: $dark; }
+.font-red { color: $red; }
+.font-green { color: $green; }
+.font-grey { color: #B5AFAE; }
+
+
+.bg-white { background-color: $white; }
+.bg-red { background-color: $red; }
+.bg-green { background-color: $green; }
+.lh-25 { line-height: 2.5; }
+.bg-black { background-color: #2E2E2E !important;}
+a { cursor: pointer !important; }

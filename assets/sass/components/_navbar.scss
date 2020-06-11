@@ -1,0 +1,11 @@
+.navbar-expand-lg {
+  padding: 40px 0;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $white;
+        font-size: 16px;
+      }
+    }
+  }
+}
