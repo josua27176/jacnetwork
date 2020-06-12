@@ -1,0 +1,13 @@
+.announcement {
+  .a-header {
+    position: relative;
+    .a-info {
+      position: absolute;
+      bottom: 110px;
+      width: 100%;
+    }
+  }
+  .a-footer {
+    background-color: #252C37;
+  }
+}
