@@ -48,6 +48,8 @@ h1,h2,h3,h4,h5 {
 .font-green { color: $green; }
 .font-light { color: $light; }
 .font-grey { color: #B5AFAE; }
+.font-blue { color: $blue; }
+.font-yellow { color: #F2C94C;}
 
 
 .bg-white { background-color: $white; }
@@ -76,4 +78,21 @@ a { cursor: pointer !important; }
 }
 .rounded {
   border-radius: 15px !important;
+}
+.progress {
+  background-color: #181C23;
+  height: 25px;
+  border-radius: 25px;
+  .progress-bar {
+    background-color: $green;
+    font-family: ClarikaPro;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 25px;
+    border-radius: 25px;
+  }
+}
+.border-bottom {
+  border-bottom: solid 2px #2F3949 !important;
 }

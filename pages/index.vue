@@ -55,8 +55,9 @@
             </div>
           </div>
         </div>
-        <!-- Server List -->
+
         <div class="col-xl-4">
+          <!-- Server List -->
           <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Server List</h4>
           <div class="row">
             <div class="col-md-12 mb-4">
@@ -119,6 +120,48 @@
                   </div>
                   <div class="col-md-2">
                     <span class="bg-red status w-100 d-block mt-4">OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Donations -->
+          <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Server Donations</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bg-dark px-4 pt-4 rounded">
+                <div class="d-header border-bottom pb-4 mb-4">
+                  <p class="fs-16 font-white mb-3 p-0"><i class="fa fa-star mr-2" aria-hidden="true"></i> Donation Goal</p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+                  </div>
+                </div>
+                <div class="d-content">
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <p class="fs-16 font-white mb-3 p-0"><i class="fa fa-check-circle mr-2" aria-hidden="true"></i> Recent Donators</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img src="https://crafatar.com/renders/head/e98a31e7-cad0-4b30-a7df-81f5dbaf2e5e.png" width="80px">
+                    </div>
+                    <div class="col-md-8 mb-4">
+                      <h4 class="fs-20 fw-400 text-white mt-2 mb-0"><span class="fw-600 font-blue">Zyrl</span> has donated $10.00</h4>
+                      <p class="fs-16 font-grey m-0 p-0">53 minutes ago</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <img src="https://crafatar.com/renders/head/d5ebbe7a-9ed1-41d8-812b-02f4a1a286f6.png" width="80px">
+                    </div>
+                    <div class="col-md-8 mb-4">
+                      <h4 class="fs-20 fw-400 text-white mt-2 mb-0"><span class="fw-600 font-yellow">rexs123</span> has donated $10.00</h4>
+                      <p class="fs-16 font-grey m-0 p-0">53 minutes ago</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <img src="https://crafatar.com/renders/head/a24092c9-af15-4798-aac8-df41ea1fec94.png" width="80px">
+                    </div>
+                    <div class="col-md-8 mb-4">
+                      <h4 class="fs-20 fw-400 text-white mt-2 mb-0"><span class="fw-600 font-red">Rowzy</span> has donated $10.00</h4>
+                      <p class="fs-16 font-grey m-0 p-0">53 minutes ago</p>
+                    </div>
                   </div>
                 </div>
               </div>
