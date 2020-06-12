@@ -5,7 +5,7 @@
       <div class="header-inner">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-5">
               <h3 class="fs-48 font-white fw-700 mb-4">Urna morbi dictum <br> sodales enim!</h3>
               <p class="fs-20 font-light lh-2">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
               <div class="button-group d-flex">
@@ -17,7 +17,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-5">
               <JacSlider></JacSlider>
             </div>
           </div>
