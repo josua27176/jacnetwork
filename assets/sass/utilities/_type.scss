@@ -65,3 +65,15 @@ a { cursor: pointer !important; }
   padding: 0;
   margin: 0;
 }
+.status {
+  color: #fff6;
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2px 0;
+  font-family: ClarikaPro;
+}
+.rounded {
+  border-radius: 15px !important;
+}
