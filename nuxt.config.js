@@ -5,11 +5,14 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'JAC Network - Premier Minecraft Network',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { name: 'theme-color', content: '#268AEB' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: '/images/card.png' },
+      { hid: 'description', name: 'description', content: 'Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim.'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
