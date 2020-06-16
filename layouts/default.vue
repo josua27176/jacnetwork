@@ -7,7 +7,7 @@
 <script>
   import JacFooter from '../components/JacFooter';
   export default  {
-    components: [JacFooter]
+    components: {JacFooter}
   }
 </script>
 

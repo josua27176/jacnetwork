@@ -1,0 +1,25 @@
+.footer {
+  p {
+    a {
+      transition: .4s;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  h4 {
+    margin-bottom: 20px;
+    margin-top: 7px;
+  }
+  .footer-link {
+    color: $white;
+    transition: .4s;
+    font-size: 18px;
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}

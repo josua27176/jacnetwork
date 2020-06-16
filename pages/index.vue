@@ -213,6 +213,7 @@ import JacSlider from '../components/JacSlider';
 
 export default {
   layout: 'default',
+  name: 'Home',
   head() {
     return {
       title: 'JAC Network - Home'
