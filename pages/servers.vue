@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="servers mb-5">
+        <div class="servers">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 mb-4">
