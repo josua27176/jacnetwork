@@ -99,3 +99,10 @@ a { cursor: pointer !important; }
 .border-bottom {
   border-bottom: solid 2px #2F3949 !important;
 }
+.info {
+  color: #2F3949;
+  transition: .4s;
+  &:hover {
+    color: $blue;
+  }
+}

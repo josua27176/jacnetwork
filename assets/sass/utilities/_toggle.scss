@@ -47,3 +47,26 @@
     color: $white;
   }
 }
+.button-sm-round {
+  border: solid 2px $white;
+  border-radius: 50px;
+  display: flex;
+  transition: .4s;
+  height: 50px;
+  a {
+    color: $white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px 0;
+    vertical-align: middle;
+    font-size: 18px;
+  }
+  &:hover {
+     background-color: $white;
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
