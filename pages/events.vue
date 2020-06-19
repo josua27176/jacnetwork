@@ -83,6 +83,110 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-4">
+                    <!-- Recent Winners -->
+                    <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Recent Winners</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bg-dark px-4 pt-4 rounded">
+                                <div class="winners-content">
+                                    <div class="row">
+                                        <div class="col-md-3 mb-4">
+                                            <img src="https://crafatar.com/renders/head/e98a31e7-cad0-4b30-a7df-81f5dbaf2e5e.png" width="80px">
+                                        </div>
+                                        <div class="col-md-8 mb-4">
+                                            <h4 class="fs-20 fw-400 text-white mt-2 mb-0"><span class="fw-600 font-blue">Zyrl</span> has donated $10.00</h4>
+                                            <p class="fs-16 font-grey m-0 p-0">53 minutes ago</p>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <img src="https://crafatar.com/renders/head/d5ebbe7a-9ed1-41d8-812b-02f4a1a286f6.png" width="80px">
+                                        </div>
+                                        <div class="col-md-8 mb-4">
+                                            <h4 class="fs-20 fw-400 text-white mt-2 mb-0"><span class="fw-600 font-yellow">rexs123</span> has donated $10.00</h4>
+                                            <p class="fs-16 font-grey m-0 p-0">53 minutes ago</p>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <img src="https://crafatar.com/renders/head/a24092c9-af15-4798-aac8-df41ea1fec94.png" width="80px">
+                                        </div>
+                                        <div class="col-md-8 mb-4">
+                                            <h4 class="fs-20 fw-400 text-white mt-2 mb-0"><span class="fw-600 font-red">Rowzy</span> has donated $10.00</h4>
+                                            <p class="fs-16 font-grey m-0 p-0">53 minutes ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Server List -->
+                    <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Server List</h4>
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="server bg-dark px-3 py-2 rounded">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="~assets/images/nether.png" width="76px">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Nether Minigames</h4>
+                                        <p class="fs-16 font-green">105/200 Playing!</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="bg-green status w-100 d-block mt-4">On</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-4">
+                            <div class="server bg-dark px-3 py-2 rounded">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="~assets/images/obsidian.png" width="76px">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Obsidian Server</h4>
+                                        <p class="fs-16 font-green">55/100 Playing!</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="bg-green status w-100 d-block mt-4">On</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-4">
+                            <div class="server bg-dark px-3 py-2 rounded">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="~assets/images/aqua.png" width="76px">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Aqua Games</h4>
+                                        <p class="fs-16 font-green">88/100 Playing!</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="bg-green status w-100 d-block mt-4">On</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="server bg-dark px-3 py-2 rounded">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="~assets/images/blaze.png" width="76px">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Blaze Games</h4>
+                                        <p class="fs-16 font-red">Server is restarting!</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span class="bg-red status w-100 d-block mt-4">OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
