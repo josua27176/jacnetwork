@@ -7,7 +7,8 @@
             <ul class="navbar-nav ml-auto d-none d-lg-flex">
                 <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/" class="nav-link">Home</router-link></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/" class="nav-link">Forums</router-link></li>
-                <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/" class="nav-link">Events</router-link></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/servers" class="nav-link">Servers</router-link></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/events" class="nav-link">Events</router-link></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/" class="nav-link">Store</router-link></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/" class="nav-link">Votes</router-link></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><router-link to="/" class="nav-link">Support</router-link></li>
