@@ -2,10 +2,10 @@
     <swiper ref="JacEvents">
         <swiper-slide>
             <div class="row">
-                <div class="col-md-2 mb-4">
+                <div class="col-4 col-md-3 mb-4">
                     <p class="text-white fs-16"><i aria-hidden="true" class="fa fa-asterisk mr-2"></i>Featured Event</p>
                 </div>
-                <div class="col-md-2 mb-4">
+                <div class="col-4 col-md-3 mb-4">
                     <p class="text-white fs-16"><i aria-hidden="true" class="fa fa-calendar-o"></i> May 09, 2020</p>
                 </div>
             </div>
