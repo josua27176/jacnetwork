@@ -17,3 +17,38 @@
     border-bottom-right-radius: 15px;
   }
 }
+.event {
+  .e-header {
+    position: relative;
+    background: url("../images/a-header-bg.png") center center no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    margin-bottom: -2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .e-category {
+    background-color: $blue;
+    font-size: 18px;
+    color: $white;
+    font-family: ClarikaPro;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    width: 160px;
+    border-radius: 50px;
+    padding: 8px 0;
+  }
+  .e-footer {
+    background-color: #252C37;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
