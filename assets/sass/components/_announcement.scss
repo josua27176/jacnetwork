@@ -1,15 +1,18 @@
 .announcement {
   .a-header {
     position: relative;
-     img {
-       border-top-left-radius: 15px;
-       border-top-right-radius: 15px;
-     }
-    .a-info {
-      position: absolute;
-      bottom: 10vh;
-      width: 100%;
-    }
+    background: url("../images/event-header-bg.png") center center no-repeat;
+    background-size: cover;
+    min-height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    overflow: hidden;
   }
   .a-footer {
     background-color: #252C37;

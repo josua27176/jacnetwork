@@ -7,9 +7,9 @@
           <div class="row">
             <div class="col-xl-6 mb-5">
               <h3 class="fs-48 font-white fw-700 mb-4">Urna morbi dictum <br> sodales enim!</h3>
-              <p class="fs-20 font-light lh-2">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
+              <p class="fs-20 font-light lh-2 mb-4">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
               <div class="button-group d-flex">
-                <div class="button-blue float-md-left mr-md-4">
+                <div class="button-blue float-md-left mr-4">
                   <a href="#">Copy IP</a>
                 </div>
                 <div class="button-outline float-md-left">
@@ -33,11 +33,8 @@
             <div class="col-md-12 mb-5">
               <div class="announcement">
                 <div class="a-header">
-                  <img src="~assets/images/a-header-bg.png" class="w-100">
-                  <div class="a-info">
                     <h3 class="font-white fs-30 text-center fw-700 text-uppercase mb-0">Announcement Title</h3>
                     <p class="fs-18 font-light lh-2 mb-4 text-center">3 Minute Read</p>
-                  </div>
                 </div>
                 <div class="a-content bg-dark px-5 pb-4 mb-0">
                   <h4 class="fs-22 text-white fw-700 text-uppercase">Title One</h4>
@@ -60,11 +57,8 @@
             <div class="col-md-12 mb-5">
               <div class="announcement">
                 <div class="a-header">
-                  <img src="~assets/images/a-header-bg.png" class="w-100">
-                  <div class="a-info">
-                    <h3 class="font-white fs-30 text-center fw-700 text-uppercase mb-0">Announcement Title</h3>
-                    <p class="fs-18 font-light lh-2 mb-4 text-center">3 Minute Read</p>
-                  </div>
+                  <h3 class="font-white fs-30 text-center fw-700 text-uppercase mb-0">Announcement Title</h3>
+                  <p class="fs-18 font-light lh-2 mb-4 text-center">3 Minute Read</p>
                 </div>
                 <div class="a-content bg-dark px-5 pb-4 mb-0">
                   <h4 class="fs-22 text-white fw-700 text-uppercase">Title One</h4>
@@ -84,6 +78,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-12 mb-5">
               <a class="d-block text-center text-uppercase fs-22 text-white fw-600 f-clarika">Load More</a>
             </div>
