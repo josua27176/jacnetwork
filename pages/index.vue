@@ -96,8 +96,8 @@
                     <img src="~assets/images/nether.png" width="76px">
                   </div>
                   <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Nether Minigames</h4>
-                    <p class="fs-16 font-green">105/200 Playing!</p>
+                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">HyWar Warfare</h4>
+                    <p class="fs-16 font-green">{{ HyWarCount }}/200 Playing!</p>
                   </div>
                   <div class="col-md-2">
                     <span class="bg-green status w-100 d-block mt-4">On</span>
@@ -112,8 +112,8 @@
                     <img src="~assets/images/obsidian.png" width="76px">
                   </div>
                   <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Obsidian Server</h4>
-                    <p class="fs-16 font-green">55/100 Playing!</p>
+                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Age of Sorcery</h4>
+                    <p class="fs-16 font-green">{{AoSCount}}/100 Playing!</p>
                   </div>
                   <div class="col-md-2">
                     <span class="bg-green status w-100 d-block mt-4">On</span>
@@ -128,8 +128,8 @@
                     <img src="~assets/images/aqua.png" width="76px">
                   </div>
                   <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Aqua Games</h4>
-                    <p class="fs-16 font-green">88/100 Playing!</p>
+                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Simply Pixel</h4>
+                    <p class="fs-16 font-green">{{ SimplyPixelCount }}/100 Playing!</p>
                   </div>
                   <div class="col-md-2">
                     <span class="bg-green status w-100 d-block mt-4">On</span>
@@ -214,6 +214,28 @@ export default {
       title: 'JAC Network - Home'
     }
   },
-  components: {JacNavbar, JacSlider}
+  components: {JacNavbar, JacSlider},
+  data() {
+    return {
+      SimplyPixelCount: null,
+      AoSCount: null,
+      HyWarCount: null,
+      ModHubCount: null,
+      SimplyPixelStatus: null,
+      AoSStatus: null,
+      HyWarStatus: null,
+      ModHubStatus: null,
+    }
+  },
+  created() {
+    this.$axios
+            .$get(`/api/status`)
+            .then((res) => {
+              this.HyWarCount = res.HyWar.count;
+              this.SimplyPixelCount = res.SimplyPixel.count;
+              this.AoSCount = res.AoS.count;
+              this.ModHub = res.ModHub.count;
+            })
+  }
 }
 </script>
