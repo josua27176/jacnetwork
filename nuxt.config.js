@@ -46,7 +46,36 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/recaptcha',
+    '@nuxtjs/proxy',
+    '@nuxtjs/auth'
   ],
+  axios: {
+
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: '/api/account/login', method: 'post', propertyName: 'token'},
+          user: false,
+        },
+      }
+    }
+  },
+  recaptcha: {
+    siteKey: "6LdwQaoZAAAAAIw-tFo3Ibbk-LtZiuxsR1cdj_I8",
+    version: 2,
+  },
+  proxy: {
+    '/api': {
+      target: 'http://localhost:8000/api/',
+      pathRewrite: {
+        '^/api' : '/'
+      }
+    }
+  },
   /*
   ** Build configuration
   */
