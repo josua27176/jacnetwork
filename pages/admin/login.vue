@@ -28,9 +28,9 @@
         components: {JacNavbar},
         data() {
             return {
-                username: null,
-                password: null,
-                captcha: null,
+                username: '',
+                password: '',
+                captcha: '',
             }
         },
         created() {
@@ -39,6 +39,7 @@
         methods: {
             onRecaptchaSuccess(recaptchaToken) {
                 this.captcha = recaptchaToken;
+
             },
             onRecaptchaError() {
                 console.log("Captcha Error")
@@ -46,16 +47,17 @@
             onRecaptchaExpired() {
                 console.log("Captcha Expired")
             },
-            async login () {
+            async login ({username, password}) {
+                const data = {
+                    username: this.username,
+                    password: this.password
+                }
                 try {
-                    let res = await this.$auth.login('local', {
-                        data: {
-                            username: this.username,
-                            password: this.password
-                        }
-                    })
+                    let res = await this.$auth.login('local', data);
+                    console.log(data)
                 } catch (err) {
-                    console.log(err)
+                    console.log(err);
+                    console.log(data)
                 }
             }
         },

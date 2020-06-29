@@ -36,6 +36,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -52,13 +53,16 @@ export default {
     '@nuxtjs/auth'
   ],
   axios: {
-
+    baseURL: `/api`,
+    headers: {
+      'Content-Type': 'application/json'
+    }
   },
   auth: {
     strategies: {
       local: {
         endpoints: {
-          login: { url: '/api/account/login', method: 'post', propertyName: 'token'},
+          login: { url: '/account/login', method: 'post', propertyName: 'token'},
           user: false,
         },
       }
@@ -70,7 +74,7 @@ export default {
   },
   proxy: {
     '/api': {
-      target: 'http://localhost:8000/api/',
+      target: 'http://localhost:8080/api/',
       pathRewrite: {
         '^/api' : '/'
       }
