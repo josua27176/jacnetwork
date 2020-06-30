@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <form @submit.prevent="login">
+            <form @submit.prevent="login({ username, password, captcha })">
                 <input type="text" name="username" v-model="username">
                 <input type="password" name="password" v-model="password">
                 <recaptcha
@@ -17,6 +17,7 @@
 
 <script>
     import JacNavbar from '@/components/JacNavbar';
+    import { mapState, mapActions } from 'vuex';
     export default {
         layout: 'default',
         name: 'Home',
@@ -47,19 +48,9 @@
             onRecaptchaExpired() {
                 console.log("Captcha Expired")
             },
-            async login ({username, password}) {
-                const data = {
-                    username: this.username,
-                    password: this.password
-                }
-                try {
-                    let res = await this.$auth.login('local', data);
-                    console.log(data)
-                } catch (err) {
-                    console.log(err);
-                    console.log(data)
-                }
-            }
+            ...mapActions({
+                login: 'authentication/login'
+            })
         },
     }
 </script>
