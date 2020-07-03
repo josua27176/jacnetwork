@@ -229,7 +229,7 @@ export default {
   },
   created() {
     this.$axios
-            .$get(`/api/status`)
+            .$get(`/status`)
             .then((res) => {
               this.HyWarCount = res.HyWar.count;
               this.SimplyPixelCount = res.SimplyPixel.count;
