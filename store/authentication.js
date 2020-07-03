@@ -4,16 +4,25 @@ const actions = {
      */
     async login({ dispatch }, { username, password, captcha}) {
         try {
-            await this.$axios.post('/account/login', {
-                username: username,
-                password: password,
-            }, {
+            this.$auth.loginWith('local', {
+                data: {
+                    username: username,
+                    password: password
+                },
                 params: {
                     captcha: captcha
                 }
-            })
+            });
+            this.$router.push(this.localePath({ path: 'admin' }))
+        } catch (error) {
+            console.log(error)
+        }
+    },
+    async logout({ dispatch }) {
+        try {
+            await this.$auth.logout();
             dispatch(
-                console.log("You're logged in")
+                console.log("You're logged out"),
             )
         } catch (error) {
             console.log(error)
@@ -26,7 +35,6 @@ const actions = {
                 password,
                 email
             }
-
             await this.$axios.post('/auth/register', data)
             dispatch('login', { username, password })
         } catch (error) {

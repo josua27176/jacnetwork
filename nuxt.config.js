@@ -59,14 +59,30 @@ export default {
     }
   },
   auth: {
+    localStorage: false,
+    cookie: {
+      options: {
+        expires: 7
+      }
+    },
+    redirect: {
+      login: '/login',
+      logout: '/',
+      callback: '/login',
+      home: '/admin'
+    },
     strategies: {
       local: {
         endpoints: {
           login: { url: '/account/login', method: 'post', propertyName: 'token'},
-          user: false,
+          logout: false,
+          user: false
         },
+        tokenRequired: true,
+        tokenType: 'Token',
+        tokenName: 'Authorization'
       }
-    }
+    },
   },
   recaptcha: {
     siteKey: "6LdwQaoZAAAAAIw-tFo3Ibbk-LtZiuxsR1cdj_I8",

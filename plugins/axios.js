@@ -7,4 +7,9 @@ export default ({$axios, store}) => {
         console.log(`[${err.response && err.response.status}] ${err.response && err.response.request.path}`);
         console.log(err.response && err.response.data);
     })
+    $axios.onRequest( (config) => {
+        if (store.state.token) {
+            config.headers.common['Authorization'] = `Bearer ${store.state.token}`
+        }
+    })
 }
