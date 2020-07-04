@@ -30,4 +30,17 @@ form {
     text-align: center;
     cursor: pointer;
   }
+  textarea {
+    width: 100%;
+    background-color: $dark;
+    resize: none;
+    border: 0;
+    color: $white;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 20px;
+    &:focus {
+      outline: 0;
+    }
+  }
 }
