@@ -1,6 +1,6 @@
-
 export default {
   mode: 'spa',
+
   /*
   ** Headers of the page
   */
@@ -36,7 +36,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/axios'
+    '~/plugins/axios',
+    '~/plugins/moment'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -105,5 +106,5 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
 }
