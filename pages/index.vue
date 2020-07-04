@@ -30,17 +30,15 @@
         <div class="col-xl-8">
           <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Announcements</h4>
           <div class="row">
-            <div class="col-md-12 mb-5">
+            <div class="col-md-12 mb-5" v-for="post in posts">
               <div class="announcement">
                 <div class="a-header">
-                    <h3 class="font-white fs-30 text-center fw-700 text-uppercase mb-0">Announcement Title</h3>
+                    <h3 class="font-white fs-30 text-center fw-700 text-uppercase mb-0">{{ post.title }}</h3>
                     <p class="fs-18 font-light lh-2 mb-4 text-center">3 Minute Read</p>
                 </div>
-                <div class="a-content bg-dark px-5 pb-4 mb-0">
-                  <h4 class="fs-22 text-white fw-700 text-uppercase">Title One</h4>
-                  <p class="fs-18 font-light lh-2 mb-4">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
-                  <p class="fs-18 font-white lh-2 blockquote mb-4"><span class="d-block ml-4">Dictum ut maecenas orci, morbi. Molestie porttitor turpis sit tortor lacus, purus arcu sed commodo. Et scelerisque a vel, pellentesque et diam nullam. Eget ipsum erat varius amet pellentesque. Orci enim sed arcu vestibulum. </span></p>
-                  <p class="fs-18 font-light lh-2">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
+                <div class="a-content bg-dark px-5 pb-4 mb-0 pt-5">
+                  <h4 class="fs-22 text-white fw-700 text-uppercase">{{ post.title }}</h4>
+                  <p class="fs-18 font-light lh-2 mb-4">{{ post.body }}</p>
                 </div>
                 <div class="a-footer px-5 py-3">
                   <div class="row">
@@ -53,34 +51,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-12 mb-5">
-              <div class="announcement">
-                <div class="a-header">
-                  <h3 class="font-white fs-30 text-center fw-700 text-uppercase mb-0">Announcement Title</h3>
-                  <p class="fs-18 font-light lh-2 mb-4 text-center">3 Minute Read</p>
-                </div>
-                <div class="a-content bg-dark px-5 pb-4 mb-0">
-                  <h4 class="fs-22 text-white fw-700 text-uppercase">Title One</h4>
-                  <p class="fs-18 font-light lh-2 mb-4">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
-                  <p class="fs-18 font-white lh-2 blockquote mb-4"><span class="d-block ml-4">Dictum ut maecenas orci, morbi. Molestie porttitor turpis sit tortor lacus, purus arcu sed commodo. Et scelerisque a vel, pellentesque et diam nullam. Eget ipsum erat varius amet pellentesque. Orci enim sed arcu vestibulum. </span></p>
-                  <p class="fs-18 font-light lh-2">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
-                </div>
-                <div class="a-footer px-5 py-3">
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="fs-16 font-white m-0 p-0"><i class="fa fa-user-circle mr-2" aria-hidden="true"></i> Administrator</p>
-                    </div>
-                    <div class="col-6">
-                      <p class="fs-16 font-white m-0 p-0 text-md-right"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> May 09, 2020</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-12 mb-5">
-              <a class="d-block text-center text-uppercase fs-22 text-white fw-600 f-clarika">Load More</a>
             </div>
           </div>
         </div>
@@ -217,6 +187,7 @@ export default {
   components: {JacNavbar, JacSlider},
   data() {
     return {
+      posts: [],
       SimplyPixelCount: null,
       AoSCount: null,
       HyWarCount: null,
@@ -235,7 +206,13 @@ export default {
               this.SimplyPixelCount = res.SimplyPixel.count;
               this.AoSCount = res.AoS.count;
               this.ModHub = res.ModHub.count;
+            });
+    this.$axios
+            .$get(`/posts`)
+            .then((res) => {
+              this.posts = res.posts;
             })
   }
+
 }
 </script>
