@@ -8,8 +8,7 @@
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin" class="nav-link">Home</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin/announcements" class="nav-link">Announcements</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin/events" class="nav-link">Events</NuxtLink></li>
-                <li class="nav-item button"><NuxtLink to="/" class="nav-link">
-                    Logout </NuxtLink></li>
+                <li class="nav-item button"><a href="#" class="nav-link" @click="logout">Logout</a></li>
             </ul>
             <div class="d-lg-none">
                 <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation" :class="{ 'is-active': displayMobileMenu }"  @click="toggleHamburger">
@@ -65,7 +64,10 @@
             },
             toggleHamburger() {
                 this.displayMobileMenu = !this.displayMobileMenu;
-            }
+            },
+            async logout() {
+                await this.$auth.logout();
+            },
         }
     }
 </script>
