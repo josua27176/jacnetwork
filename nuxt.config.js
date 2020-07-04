@@ -79,8 +79,8 @@ export default {
           user: false
         },
         tokenRequired: true,
-        tokenType: 'Token',
-        tokenName: 'Authorization'
+        tokenType: 'Bearer',
+        tokenName: 'Authorization',
       }
     },
   },
