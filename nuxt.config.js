@@ -47,11 +47,16 @@ export default {
   /*
   ** Nuxt.js modules
   */
+  pageTransition: {
+    name: 'fade',
+    mode: 'out-in'
+  },
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/recaptcha',
     '@nuxtjs/proxy',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    '@nuxtjs/toast'
   ],
   axios: {
     baseURL: `/api`,
@@ -96,6 +101,10 @@ export default {
         '^/api' : '/'
       }
     }
+  },
+  toast: {
+    position: 'bottom-center',
+    dismissInterval: 5000
   },
   /*
   ** Build configuration
