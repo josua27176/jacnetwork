@@ -5,8 +5,7 @@
                 <img src="~assets/images/logo.svg" alt="JAC Network" style="width: 250px;">
             </a>
             <ul class="navbar-nav ml-auto d-none d-lg-flex">
-                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin" class="nav-link">Home</NuxtLink></li>
-                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin/announcements" class="nav-link">Announcements</NuxtLink></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin" class="nav-link">Announcements</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/admin/events" class="nav-link">Events</NuxtLink></li>
                 <li class="nav-item button"><a href="#" class="nav-link" @click="logout">Logout</a></li>
             </ul>
