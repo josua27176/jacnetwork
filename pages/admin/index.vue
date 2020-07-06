@@ -18,9 +18,6 @@
                         <div class="button-outline float-md-left">
                             <nuxt-link :to="`/admin/announcement/${post.id}`">Edit</nuxt-link>
                         </div>
-                        <div class="button-blue float-md-left ml-4">
-                            <a href="#">Delete</a>
-                        </div>
                     </div>
                 </div>
             </div>
