@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-12 bg-dark rounded py-5 px-5 mb-5" v-for="post in posts">
                     <h2 class="fs-22 text-white fw-600 mt-0 mb-2"> {{ post.title }}</h2>
-                    <h4 class="fs-18 text-white mb-4">{{ post.timestamp }}</h4>
+                    <h4 class="fs-18 text-white mb-4">{{ new Date(post.timestamp * 1000)  }}</h4>
                     <p class="fs-18 text-white lh-25 mb-4">{{ post.body }}</p>
                     <div class="button-group d-flex">
                         <div class="button-outline float-md-left">
@@ -28,7 +28,9 @@
     </div>
 </template>
 <script>
-    import { mapState, mapActions, mapGetters } from 'vuex';
+    import moment from "moment";
+
+
     export default {
         name: 'Admin',
         layout: 'admin',
@@ -44,6 +46,6 @@
                 .then((res) => {
                     this.posts = res.posts;
                 })
-        },
+         },
     }
 </script>

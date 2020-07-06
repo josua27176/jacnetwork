@@ -56,6 +56,7 @@ export default {
     '@nuxtjs/recaptcha',
     '@nuxtjs/proxy',
     '@nuxtjs/auth',
+    '@nuxtjs/moment',
     '@nuxtjs/toast'
   ],
   axios: {
