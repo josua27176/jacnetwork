@@ -16,7 +16,7 @@
                         <h4 class="fs-18 text-white fw-400 mt-0 mb-4 text-center"> {{ event.start | moment().format("MMM DD YYYY") }}</h4>
                         <h4 class="fs-22 text-white fw-600 mb-4 text-center">{{ event.title }}</h4>
                         <div class="button-blue mx-auto">
-                            <nuxt-link :to="`events/${event.id}`">test</nuxt-link>
+                            <nuxt-link :to="`events/${event.id}`">View</nuxt-link>
                         </div>
                     </div>
                 </div>
