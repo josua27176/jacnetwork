@@ -46,7 +46,7 @@
                       <p class="fs-16 font-white m-0 p-0"><i class="fa fa-user-circle mr-2" aria-hidden="true"></i> Administrator</p>
                     </div>
                     <div class="col-6">
-                      <p class="fs-16 font-white m-0 p-0 text-md-right"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> May 09, 2020</p>
+                      <p class="fs-16 font-white m-0 p-0 text-md-right"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> {{ postTime(post.timestamp) }}</p>
                     </div>
                   </div>
                 </div>
@@ -175,6 +175,7 @@
 <script>
 import JacNavbar from '../components/JacNavbar';
 import JacSlider from '../components/JacSlider';
+import moment from "moment";
 
 export default {
   layout: 'default',
@@ -212,6 +213,11 @@ export default {
             .then((res) => {
               this.posts = res.posts;
             })
+  },
+  methods: {
+    postTime (value) {
+      return moment.unix(value).format("MMM DD YYYY");
+    }
   }
 
 }
