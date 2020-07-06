@@ -26,7 +26,7 @@
 </template>
 <script>
     import { mapState, mapActions, mapGetters } from 'vuex';
-
+    import moment from "moment";
     export default {
         middleware: 'auth',
         layout: 'admin',
