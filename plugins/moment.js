@@ -1,3 +1,4 @@
-import moment from 'moment';
+import Vue from 'vue';
+import VueMomentLib from "vue-moment-lib";
+Vue.use(VueMomentLib);
 
-import 'moment';
