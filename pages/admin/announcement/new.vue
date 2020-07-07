@@ -40,7 +40,7 @@
                 )
                     .then(() => {
                         this.$toast.success('Announcement has been created.');
-                        this.$router.push('/admin/');
+                            this.$router.push('/admin/');
                     })
             }
         },
