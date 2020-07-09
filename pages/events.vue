@@ -36,8 +36,8 @@
                                             </div>
                                         </div>
                                         <div class="col-2">
-                                            <div class="button-sm-round w-100">
-                                                <a href="#">Register</a>
+                                            <div class="button-sm-round w-100" @click="registerModal(event.id)">
+                                                <a>Register</a>
                                             </div>
                                         </div>
                                     </div>
@@ -152,6 +152,10 @@
                 </div>
             </div>
         </div>
+        <modal name="event-register">
+            <P>{{ event.title }}</P>
+        </modal>
+
     </div>
 </template>
 <script>
@@ -164,6 +168,8 @@
         data() {
             return {
                 events: [],
+                localTime: '',
+                event: ''
             }
         },
         head() {
@@ -178,9 +184,21 @@
                     this.events = res.events;
                 })
         },
+        computed:  {
+
+        },
         methods: {
             eventTime (value) {
-                return moment.unix(value).format("MMM DD YYYY");
+                return moment.unix(value).format("MMM-DD-YYYY");
+            },
+            async registerModal (event) {
+                this.event = event;
+                this.$axios
+                    .$get('/events/' + event)
+                    .then((res) => {
+                        this.event = res;
+                        this.$modal.show('event-register');
+                    })
             }
         },
         components: {JacNavbar, JacEvents}
