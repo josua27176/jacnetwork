@@ -22,9 +22,9 @@
                 </form>
             </div>
             <div class="col-md-4">
-                <h2 class="fs-36 font-white fw-700 mb-4">Registered </h2>
+                <h2 class="fs-36 font-white fw-700 mb-4">Registered Users</h2>
                 <ul class="list-unstyled">
-                    {{ this.users }}
+                    <li v-for="user in users" class="text-white mb-3 fs-18 fw-600 f-clarika">{{ user }}</li>
                 </ul>
 
             </div>

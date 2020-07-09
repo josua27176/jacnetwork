@@ -233,14 +233,14 @@
                         this.$modal.show('event-register');
                     })
             },
-            registerEvent(id) {
+            async registerEvent(id) {
                 this.$axios.post('/events/' + id + '/register', {
                         username: this.username,
                         captcha: this.captcha
                     }
                 )
                     .then(function (res) {
-                        console.log(res)
+                        alert("You've successfully registered for the event!");
                     })
                     .catch(function (error) {
                        alert("You've entered an invalid username.")
