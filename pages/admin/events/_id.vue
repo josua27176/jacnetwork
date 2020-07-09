@@ -22,7 +22,11 @@
                 </form>
             </div>
             <div class="col-md-4">
-                <h2 class="fs-36 font-white fw-700 mb-4">Registered</h2>
+                <h2 class="fs-36 font-white fw-700 mb-4">Registered </h2>
+                <ul class="list-unstyled">
+                    {{ this.users }}
+                </ul>
+
             </div>
         </div>
     </div>
@@ -35,6 +39,7 @@
           return {
               eventTitle: '',
               eventBody: '',
+              users: [],
           }
         },
         methods: {
@@ -62,11 +67,8 @@
                 .then((res) => {
                     this.eventTitle = res.title;
                     this.eventBody = res.body;
-                })
-            this.$axios
-                .$get('/events/' + this.$route.params.id + '/participants')
-                .then((res) => {
-                    console.log(res)
+                    this.users = res.users;
+                    console.log(this.users);
                 })
         }
     }

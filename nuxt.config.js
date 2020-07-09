@@ -102,6 +102,12 @@ export default {
       pathRewrite: {
         '^/api' : '/'
       }
+    },
+    '/verify': {
+      target: 'https://api.mojang.com/users/profiles/minecraft/',
+      pathRewrite: {
+        '^/verify' : '/'
+      }
     }
   },
   toast: {

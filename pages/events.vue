@@ -152,8 +152,29 @@
                 </div>
             </div>
         </div>
-        <modal name="event-register">
-            <P>{{ event.title }}</P>
+        <modal name="event-register" :height="500">
+            <p class="fs-16 font-grey mb-2 p-0">Register For Event <span>{{ errorMsg }}</span></p>
+            <h4 class="fs-22 text-white fw-600 mb-5">{{ event.title }}</h4>
+            <form @submit.prevent="registerEvent(event.id)">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group mb-5">
+                            <label>Enter your username:</label>
+                            <input type="text" name="username" v-model="username">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <recaptcha class="mb-5"
+                                   @error="onRecaptchaError"
+                                   @success="onRecaptchaSuccess"
+                                   @expired="onRecaptchaExpired"
+                        ></recaptcha>
+                        <button class="form-button bg-blue" type="submit">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </form>
         </modal>
 
     </div>
@@ -169,7 +190,10 @@
             return {
                 events: [],
                 localTime: '',
-                event: ''
+                event: '',
+                username: '',
+                captcha: '',
+                errorMsg: '',
             }
         },
         head() {
@@ -191,7 +215,16 @@
             eventTime (value) {
                 return moment.unix(value).format("MMM-DD-YYYY");
             },
-            async registerModal (event) {
+            onRecaptchaSuccess(recaptchaToken) {
+                this.captcha = recaptchaToken;
+            },
+            onRecaptchaError() {
+                console.log("Captcha Error")
+            },
+            onRecaptchaExpired() {
+                console.log("Captcha Expired")
+            },
+            registerModal (event) {
                 this.event = event;
                 this.$axios
                     .$get('/events/' + event)
@@ -199,6 +232,19 @@
                         this.event = res;
                         this.$modal.show('event-register');
                     })
+            },
+            registerEvent(id) {
+                this.$axios.post('/events/' + id + '/register', {
+                        username: this.username,
+                        captcha: this.captcha
+                    }
+                )
+                    .then(function (res) {
+                        console.log(res)
+                    })
+                    .catch(function (error) {
+                       alert("You've entered an invalid username.")
+                    });
             }
         },
         components: {JacNavbar, JacEvents}
