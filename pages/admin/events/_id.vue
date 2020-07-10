@@ -14,8 +14,8 @@
                             <label class="mb-3">Event Description:</label>
                             <textarea rows="5" class="mb-5" :value="`${this.eventBody}`"></textarea>
                         </div>
-                        <div class="col-md-5">
-                            <button type="submit" class="form-button bg-blue mr-4">Save</button>
+                        <div class="col-xl-6">
+                            <button type="submit" class="form-button bg-blue mr-4 float-left">Save</button>
                             <button @click="deleteEvent" type="submit" class="form-button bg-dark">Delete</button>
                         </div>
                     </div>
@@ -24,9 +24,9 @@
             <div class="col-md-4">
                 <h2 class="fs-36 font-white fw-700 mb-4">Registered Users</h2>
                 <ul class="list-unstyled">
-                    <li v-for="user in users" class="text-white mb-3 fs-18 fw-600 f-clarika">{{ user }}</li>
+                    <li v-for="user in users" class="text-white mb-3 fs-24 fw-600 f-clarika">{{ user }} <a class="fs-14 fw-400" @click="addWinner(user)">Add Winner</a> </li>
                 </ul>
-
+                <button type="submit" class="form-button bg-blue mr-4 float-left" @click="setWinners">Save</button>
             </div>
         </div>
     </div>
@@ -40,11 +40,28 @@
               eventTitle: '',
               eventBody: '',
               users: [],
+              winners:[],
           }
         },
         methods: {
-            updateEvent() {
+            addWinner(winner) {
+                this.winners.push(winner);
+                this.$toast.success('Added Winner');
 
+            },
+            async setWinners() {
+                let token = this.$auth.getToken('local');
+                this.$axios.post('/events/' + this.$route.params.id + '/winners', {
+                        winners: this.winners,
+                    }, {
+                        headers: {
+                            Authorization: token
+                        },
+                    },
+                )
+                    .then(() => {
+                        this.$toast.success('Winners have been added.');
+                    })
             },
             async deleteEvent() {
                 let token = this.$auth.getToken('local');
@@ -68,7 +85,6 @@
                     this.eventTitle = res.title;
                     this.eventBody = res.body;
                     this.users = res.users;
-                    console.log(this.users);
                 })
         }
     }
