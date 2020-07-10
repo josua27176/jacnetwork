@@ -6,7 +6,7 @@
                     <p class="text-white fs-16"><i aria-hidden="true" class="fa fa-asterisk mr-2"></i>Featured Event</p>
                 </div>
                 <div class="col-4 col-md-3 mb-4">
-                    <p class="text-white fs-16"><i aria-hidden="true" class="fa fa-calendar-o"></i> May 09, 2020</p>
+                    <p class="text-white fs-16"><i aria-hidden="true" class="fa fa-calendar-o"></i> {{ eventTime(event.start )}}</p>
                 </div>
             </div>
             <div class="row">
@@ -62,7 +62,7 @@
         },
         methods: {
             eventTime (value) {
-                return moment.unix(value).format("MMM DD YYYY");
+                return moment.unix(value).format('MMMM DD YYYY, h:mm a');
             },
             registerModal (eventID) {
                 this.$modal.show('event-register', {eventID: eventID});
