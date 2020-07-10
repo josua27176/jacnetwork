@@ -58,72 +58,7 @@
         <div class="col-xl-4">
           <!-- Server List -->
           <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Server List</h4>
-          <div class="row">
-            <div class="col-md-12 mb-4">
-              <div class="server bg-dark px-3 py-2 rounded">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="~assets/images/nether.png" width="76px">
-                  </div>
-                  <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">HyWar Warfare</h4>
-                    <p class="fs-16 font-green">{{ HyWarCount }}/200 Playing!</p>
-                  </div>
-                  <div class="col-md-2">
-                    <span class="bg-green status w-100 d-block mt-4">On</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 mb-4">
-              <div class="server bg-dark px-3 py-2 rounded">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="~assets/images/obsidian.png" width="76px">
-                  </div>
-                  <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Age of Sorcery</h4>
-                    <p class="fs-16 font-green">{{AoSCount}}/100 Playing!</p>
-                  </div>
-                  <div class="col-md-2">
-                    <span class="bg-green status w-100 d-block mt-4">On</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 mb-4">
-              <div class="server bg-dark px-3 py-2 rounded">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="~assets/images/aqua.png" width="76px">
-                  </div>
-                  <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Simply Pixel</h4>
-                    <p class="fs-16 font-green">{{ SimplyPixelCount }}/100 Playing!</p>
-                  </div>
-                  <div class="col-md-2">
-                    <span class="bg-green status w-100 d-block mt-4">On</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="server bg-dark px-3 py-2 rounded">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="~assets/images/blaze.png" width="76px">
-                  </div>
-                  <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Blaze Games</h4>
-                    <p class="fs-16 font-red">Server is restarting!</p>
-                  </div>
-                  <div class="col-md-2">
-                    <span class="bg-red status w-100 d-block mt-4">OFF</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <JacServers></JacServers>
           <!-- Donations -->
           <h4 class="text-white fw-700 fs-24 text-uppercase mt-5 mb-4">Server Donations</h4>
           <div class="row">
@@ -176,6 +111,7 @@
 import JacNavbar from '../components/JacNavbar';
 import JacSlider from '../components/JacSlider';
 import moment from "moment";
+import JacServers from "../components/JacServers";
 
 export default {
   layout: 'default',
@@ -185,18 +121,11 @@ export default {
       title: 'JAC Network - Home'
     }
   },
-  components: {JacNavbar, JacSlider},
+  components: {JacServers, JacNavbar, JacSlider},
   data() {
     return {
       posts: [],
-      SimplyPixelCount: null,
-      AoSCount: null,
-      HyWarCount: null,
-      ModHubCount: null,
-      SimplyPixelStatus: null,
-      AoSStatus: null,
-      HyWarStatus: null,
-      ModHubStatus: null,
+
     }
   },
   created() {
