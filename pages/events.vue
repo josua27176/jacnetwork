@@ -117,6 +117,7 @@
 <script>
     import JacNavbar from '../components/JacNavbar';
     import JacEvents from '../components/JacEvents';
+    import JacServers from '../components/JacServers';
     import moment from "moment";
     export default {
         layout: 'default',
