@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-md-3 mb-4" v-for="event in events">
                     <div class="bg-dark rounded py-4">
-                        <h4 class="fs-18 text-white fw-400 mt-0 mb-4 text-center"> {{ event.start | moment().format("MMM DD YYYY") }}</h4>
+                        <h4 class="fs-18 text-white fw-400 mt-0 mb-4 text-center"> {{ eventTime(event.start) }}</h4>
                         <h4 class="fs-22 text-white fw-600 mb-4 text-center">{{ event.title }}</h4>
                         <div class="button-blue mx-auto">
                             <nuxt-link :to="`events/${event.id}`">View</nuxt-link>
@@ -45,5 +45,11 @@
                     console.log(this.events);
                 })
         },
+        methods: {
+            eventTime (value) {
+                console.log(value);
+                return moment.unix(value).format('MMMM DD YYYY, h:mm a');
+            },
+        }
     }
 </script>

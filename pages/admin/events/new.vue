@@ -8,7 +8,7 @@
                     <input type="text" name="event_name" v-model="eventName" class="mb-4">
 
                     <label class="mb-3">Event Start:</label>
-                    <input type="date" class="mb-4" name="event_start" v-model="eventStart">
+                    <input type="datetime-local" class="mb-4" name="event_start" v-model="eventStart">
 
                     <label class="mb-3">Event Description:</label>
                     <textarea v-model="eventDescription" rows="5" class="mb-5"></textarea>
@@ -20,7 +20,7 @@
 </template>
 <script>
     import { mapState, mapActions, mapGetters } from 'vuex';
-
+    import moment from "moment";
     export default {
         layout: 'admin',
         middleware: 'auth',
@@ -37,7 +37,7 @@
                 this.$axios.post('/events', {
                     title: this.eventName,
                     body: this.eventDescription,
-                    start: Date.parse(this.eventStart),
+                    start: moment(this.eventStart).unix(),
                     }, {
                         headers: {
                             Authorization: token

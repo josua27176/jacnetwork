@@ -149,7 +149,7 @@
         },
         methods: {
             eventTime (value) {
-                return moment.unix(value).format("MMM-DD-YYYY");
+                return moment.unix(value).format('MMMM DD YYYY, h:mm a');
             },
             onRecaptchaSuccess(recaptchaToken) {
                 this.captcha = recaptchaToken;

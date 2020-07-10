@@ -54,7 +54,7 @@
   transition: .4s;
   height: 40px;
   a {
-    color: $white;
+    color: $white !important;
     display: block;
     text-align: center;
     font-weight: 500;
@@ -67,7 +67,7 @@
      background-color: $white;
     a {
       text-decoration: none;
-      color: $blue;
+      color: $blue !important;
     }
   }
 }
