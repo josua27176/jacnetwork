@@ -14,13 +14,6 @@
                     <h4 class="text-white fs-24 fw-600 mb-3">{{ event.title }}</h4>
                     <p class="font-grey fs-18 lh-2">{{ event.body }}</p>
                 </div>
-                <div class="col-md-12">
-                    <div class="button-group d-flex">
-                        <div class="toggle-button" @click="registerModal(event.id)">
-                            Register
-                        </div>
-                    </div>
-                </div>
             </div>
         </swiper-slide>
     </swiper>
@@ -48,7 +41,7 @@
                     loop: true,
                     slidesPerView: 'auto',
                     autoplay: {
-                        delay: 2500,
+                        delay: 3200,
                     }
                 }
             }
