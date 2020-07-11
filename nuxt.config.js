@@ -44,9 +44,7 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-    '@aceforth/nuxt-netlify'
-  ],
+
   /*
   ** Nuxt.js modules
   */
@@ -63,7 +61,7 @@ export default {
     '@nuxtjs/toast'
   ],
   axios: {
-    baseURL: `:8080/api`,
+    baseURL: `/api`,
     headers: {
       'Content-Type': 'application/json'
     }
