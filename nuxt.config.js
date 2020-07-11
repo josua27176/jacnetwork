@@ -98,7 +98,7 @@ export default {
   },
   proxy: {
     '/api': {
-      target: 'http://localhost:8080/api/',
+      target: 'http://web.ethansmith.us:8080/api/',
       pathRewrite: {
         '^/api' : '/'
       }
