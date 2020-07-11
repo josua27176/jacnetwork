@@ -38,7 +38,8 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/moment',
-    '~/plugins/modal'
+    '~/plugins/modal',
+    '~/plugins/clipboard'
   ],
   /*
   ** Nuxt.js dev-modules

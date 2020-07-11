@@ -24,6 +24,7 @@
     "sass-loader": "^8.0.2",
     "swiper": "^5.4.2",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-clipboard2": "^0.3.1",
     "vue-js-modal": "^2.0.0-rc.3",
     "vue-moment": "^4.1.0",
     "vue-moment-lib": "^1.2.2"

@@ -48,12 +48,12 @@
                 console.log("Captcha Expired")
             },
             register() {
-                this.$axios.post('/api/account/register', {
+                this.$axios.post('/account/register', {
                     username: this.username,
                     password: this.password,
                 }, { params: {
                         captcha: this.captcha,
-                        hash: "98uazd98had90haoidhaodhj",
+                        hash: "3a4ca1f1c15cc0327b40258538bbd69c",
                     }}
                 )
                     .then(function (res) {

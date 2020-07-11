@@ -10,7 +10,7 @@
               <p class="fs-20 font-light lh-2 mb-4">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
               <div class="button-group d-flex">
                 <div class="button-blue float-md-left mr-4">
-                  <a href="#">Copy IP</a>
+                  <a @click="copyIP">Copy IP</a>
                 </div>
                 <div class="button-outline float-md-left">
                   <a href="/events">Events</a>
@@ -125,7 +125,7 @@ export default {
   data() {
     return {
       posts: [],
-
+      serverIP: 'test',
     }
   },
   created() {
@@ -146,6 +146,17 @@ export default {
   methods: {
     postTime (value) {
       return moment.unix(value).format("MMM DD YYYY");
+    },
+    async copyIP() {
+      let textToCopy = 'play.jac.network';
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        this.$toast.success('Copied to clipboard.')
+
+      } catch (err) {
+        console.error('Failed to copy: ', err);
+      }
+
     }
   }
 
