@@ -29,5 +29,7 @@
     "vue-moment": "^4.1.0",
     "vue-moment-lib": "^1.2.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@aceforth/nuxt-netlify": "^1.0.0"
+  }
 }
