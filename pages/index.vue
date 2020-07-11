@@ -43,7 +43,7 @@
                 <div class="a-footer px-5 py-3">
                   <div class="row">
                     <div class="col-6">
-                      <p class="fs-16 font-white m-0 p-0"><i class="fa fa-user-circle mr-2" aria-hidden="true"></i> Administrator</p>
+                      <p class="fs-16 font-white m-0 p-0"><i class="fa fa-user-circle mr-2" aria-hidden="true"></i> {{ post.author }}</p>
                     </div>
                     <div class="col-6">
                       <p class="fs-16 font-white m-0 p-0 text-md-right"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> {{ postTime(post.timestamp) }}</p>
