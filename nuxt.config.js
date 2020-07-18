@@ -93,7 +93,7 @@ export default {
     },
   },
   recaptcha: {
-    siteKey: "6Lc3KbAZAAAAAA-Bbu67874_qeeILIW7NQm9m6S2",
+    siteKey: "6LcEK7AZAAAAAMj1AI2QDdZI9Fd7iEG-5qN7D1Qx",
     version: 2,
   },
   proxy: {

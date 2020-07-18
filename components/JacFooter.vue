@@ -13,26 +13,26 @@
                 <div class="col-md-2 offset-md-1 mb-4">
                     <h4 class="font-light fs-20 text-uppercase fw-600">Community</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><a class="footer-link" href="/">Forums</a></li>
-                        <li class="mb-3"><a class="footer-link" href="/">Discord Server</a></li>
-                        <li><a class="footer-link" href="/">Twitter</a></li>
+                        <li class="mb-3"><a class="footer-link" href="https://forums.jac.network/">Forums</a></li>
+                        <li class="mb-3"><a class="footer-link" href="https://discord.gg/XtuU3Gz">Discord Server</a></li>
+                        <li><a class="footer-link" href="https://twitter.com/jacnetwork">Twitter</a></li>
                         <li><a class="footer-link" href="/"></a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-4">
                     <h4 class="font-light fs-20 text-uppercase fw-600">Servers</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><a class="footer-link" href="/">Minigames</a></li>
-                        <li class="mb-3"><a class="footer-link" href="/">Vanilla Survival</a></li>
-                        <li><a class="footer-link" href="/">Towny</a></li>
+                        <li class="mb-3"><a class="footer-link" href="/servers">HyWar</a></li>
+                        <li class="mb-3"><a class="footer-link" href="/servers">Simply Pixel</a></li>
+                        <li><a class="footer-link" href="/servers">Age of Sorcery</a></li>
                         <li><a class="footer-link" href="/"></a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-4">
                     <h4 class="font-light fs-20 text-uppercase fw-600">Donate</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><a class="footer-link" href="/">Store</a></li>
-                        <li class="mb-3"><a class="footer-link" href="/">Vote</a></li>
+                        <li class="mb-3"><a class="footer-link" href="https://store.jac.network/">Store</a></li>
+                        <li class="mb-3"><a class="footer-link" href="/vote">Vote</a></li>
                         <li><a class="footer-link" href="/">Affiliates</a></li>
                         <li><a class="footer-link" href="/"></a></li>
                     </ul>
@@ -40,9 +40,9 @@
                 <div class="col-md-2">
                     <h4 class="font-light fs-20 text-uppercase fw-600">Partners</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><a class="footer-link" href="/">Rexs Development</a></li>
-                        <li class="mb-3"><a class="footer-link" href="/">Zyrl Designs</a></li>
-                        <li><a class="footer-link" href="/">Rozy Designs</a></li>
+                        <li class="mb-3"><a class="footer-link" href="https://donationstore.net/">Donation Store</a></li>
+                        <li class="mb-3"><a class="footer-link" href="https://fastcat.co/">FastCat Gaming Servers</a></li>
+                        <li><a class="footer-link" href="https://santosrp2.com/">SantosRP2</a></li>
                         <li><a class="footer-link" href="/"></a></li>
                     </ul>
                 </div>
