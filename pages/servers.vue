@@ -145,7 +145,7 @@
                                             <p class="font-grey fs-14">Modpack | Minecraft 1.12.2</p>
                                         </div>
                                         <div class="col-md-3">
-                                            <span class="bg-orange status w-100 d-block mt-2">Coming Soon</span>
+                                            <span class="bg-orange status w-100 d-block mt-2">In Beta</span>
                                         </div>
                                         <div class="col-md-12">
                                             <p class="text-white fs-18 lh-2">Age of Sorcery is an old JAC Classic styled Wizards Academy! With potions and magic and spells galour, how could there be, theres so much more! Coming very soon please stay tuned here! </p>
@@ -200,19 +200,19 @@
                                 <div class="col-xl-7">
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <h3 class="text-white fs-24 fw-600 text-uppercase">Just Enough Stuff</h3>
-                                            <p class="font-grey fs-14">Modpack | Minecraft 1.15.2</p>
+                                            <h3 class="text-white fs-24 fw-600 text-uppercase">JAC Network Function Server</h3>
+                                            <p class="font-grey fs-14">Vanilla | Minecraft 1.12.2</p>
                                         </div>
                                         <div class="col-md-3">
                                             <span class="bg-green status w-100 d-block mt-2">Online</span>
                                         </div>
                                         <div class="col-md-12">
-                                            <p class="text-white fs-18 lh-2">Aliquet venenatis, amet morbi pulvinar auctor molestie proin. Id dictum vulputate faucibus metus dolor id odio ac. </p>
+                                            <p class="text-white fs-18 lh-2">Only found here at JAC Network its our notorious JAC Network Function/Events Server! We have many fun game show studios to play with the community including Family Fued, The JAC Voice, Who Wants to be a Millionaire, and Deal or No Deal! Come stop by during our community events Saturdays at 6PM EST.</p>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="button-sm-round float-left mr-4" >
                                                 <a href="" class="float-left" style="width: 300px;">
-                                                    jes.jac.network
+                                                    func.jac.network
                                                     <span class="ml-3 bg-black d-inline-block status" style="width: 80px;">Copy</span>
                                                 </a>
                                             </div>
