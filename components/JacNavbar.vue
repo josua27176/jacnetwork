@@ -6,10 +6,10 @@
             </a>
             <ul class="navbar-nav ml-auto d-none d-lg-flex">
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Home</NuxtLink></li>
-                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="https://forums.jac.network/" class="nav-link">Forums</NuxtLink></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Forums</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/servers" class="nav-link">Servers</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/events" class="nav-link">Events</NuxtLink></li>
-                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="https://store.jac.network/" class="nav-link">Store</NuxtLink></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Store</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/votes" class="nav-link">Votes</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Support</NuxtLink></li>
                 <li class="nav-item button"><NuxtLink to="/" class="nav-link"><i class="fa fa-discord-alt mr-2" aria-hidden="true"></i>
@@ -28,16 +28,16 @@
                                 <NuxtLink class="text-white" to="/">Home</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
-                                <NuxtLink class="text-white" href="https://forums.jac.network/">Forums</NuxtLink>
+                                <NuxtLink class="text-white" to="/">Forums</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
                                 <NuxtLink class="text-white" to="/events">Events</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
-                                <NuxtLink class="text-white" href="https://store.jac.network/">Store</NuxtLink>
+                                <NuxtLink class="text-white" to="/">Store</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
-                                <NuxtLink class="text-white" to="/">Videos</NuxtLink>
+                                <NuxtLink class="text-white" to="/servers">Servers</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
                                 <NuxtLink class="text-white" to="/vote">Votes</NuxtLink>
