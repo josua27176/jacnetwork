@@ -5,14 +5,14 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'JAC Network - Premier Minecraft Network',
+    title: 'JAC Network - Modded Minecraft Gaming Community',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'theme-color', content: '#268AEB' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:image', content: '/images/card.png' },
-      { hid: 'description', name: 'description', content: 'Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim.'}
+      { hid: 'description', name: 'description', content: 'Come join us today if your interested in anything Modded Minecraft including pixelmon!'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -98,7 +98,7 @@ export default {
   },
   proxy: {
     '/api': {
-      target: 'http://web.ethansmith.us:8080/api/',
+      target: 'http://jac.network:8080/api/',
       pathRewrite: {
         '^/api' : '/'
       }

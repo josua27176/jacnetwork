@@ -6,8 +6,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-6 mb-5">
-              <h3 class="fs-48 font-white fw-700 mb-4">Urna morbi dictum <br> sodales enim!</h3>
-              <p class="fs-20 font-light lh-2 mb-4">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae. Fringilla consequat scelerisque aliquet elit.</p>
+              <h3 class="fs-48 font-white fw-700 mb-4">Welcome to the new <br>JAC Network Site!</h3>
+              <p class="fs-20 font-light lh-2 mb-4">We just upgraded!!!! again..... You heard right folks more upgrades have arrived! We have just updated to our new front-end as well as upgraded our proxy software as well for server join time!</p>
               <div class="button-group d-flex">
                 <div class="button-blue float-md-left mr-4">
                   <a @click="copyIP">Copy IP</a>

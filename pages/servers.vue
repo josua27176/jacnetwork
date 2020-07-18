@@ -6,7 +6,7 @@
                 <div class="container">
                     <div class="col-xl-8 mx-auto">
                         <h2 class="text-white fw-600 text-center fs-48">Server List</h2>
-                        <p class="font-light fs-20 text-center lh-2">Malesuada tincidunt in nunc egestas sed velit. Id et vitae vitae pellentesque dignissim amet enim. Fringilla consequat scelerisque aliquet elit. Augue congue volutpat vitae.</p>
+                        <p class="font-light fs-20 text-center lh-2">Here you can find all of your JAC Network Servers you want to play on whether its a PvP Pack like HYWAR or a nice PvE Pack with Simply Pixel! Whatever your taste we have it all come check it out today!</p>
                     </div>
                 </div>
             </div>
@@ -23,19 +23,19 @@
                                 <div class="col-xl-7">
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <h3 class="text-white fs-24 fw-600 text-uppercase">Just Enough Stuff</h3>
-                                            <p class="font-grey fs-14">Modpack | Minecraft 1.15.2</p>
+                                            <h3 class="text-white fs-24 fw-600 text-uppercase">Simply Pixel</h3>
+                                            <p class="font-grey fs-14">Modpack | Minecraft 1.12.2</p>
                                         </div>
                                         <div class="col-md-3">
                                             <span class="bg-green status w-100 d-block mt-2">Online</span>
                                         </div>
                                         <div class="col-md-12">
-                                            <p class="text-white fs-18 lh-2">Aliquet venenatis, amet morbi pulvinar auctor molestie proin. Id dictum vulputate faucibus metus dolor id odio ac. </p>
+                                            <p class="text-white fs-18 lh-2">Are you into Pokemon? If so, this is the pack for you... Its Simply Pokemon in Minecraft with some awesome features like quests, Tournaments, and daily events! </p>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="button-sm-round float-left mr-4" >
                                                 <a href="" class="float-left" style="width: 300px;">
-                                                    jes.jac.network
+                                                    pixel.jac.network
                                                     <span class="ml-3 bg-black d-inline-block status" style="width: 80px;">Copy</span>
                                                 </a>
                                             </div>
@@ -82,19 +82,19 @@
                                 <div class="col-xl-7">
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <h3 class="text-white fs-24 fw-600 text-uppercase">Just Enough Stuff</h3>
-                                            <p class="font-grey fs-14">Modpack | Minecraft 1.15.2</p>
+                                            <h3 class="text-white fs-24 fw-600 text-uppercase">HyWar - Modded Warfare</h3>
+                                            <p class="font-grey fs-14">Modpack | Minecraft 1.12.2</p>
                                         </div>
                                         <div class="col-md-3">
                                             <span class="bg-green status w-100 d-block mt-2">Online</span>
                                         </div>
                                         <div class="col-md-12">
-                                            <p class="text-white fs-18 lh-2">Aliquet venenatis, amet morbi pulvinar auctor molestie proin. Id dictum vulputate faucibus metus dolor id odio ac. </p>
+                                            <p class="text-white fs-18 lh-2">Are you here from the old days of voltz and infamy well if so you're gonna fit right in on HyWar. As for you newbies you better get ready for a fight cause these folks dont mess around here. </p>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="button-sm-round float-left mr-4" >
                                                 <a href="" class="float-left" style="width: 300px;">
-                                                    jes.jac.network
+                                                    hywar.jac.network
                                                     <span class="ml-3 bg-black d-inline-block status" style="width: 80px;">Copy</span>
                                                 </a>
                                             </div>
@@ -141,19 +141,19 @@
                                 <div class="col-xl-7">
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <h3 class="text-white fs-24 fw-600 text-uppercase">Just Enough Stuff</h3>
-                                            <p class="font-grey fs-14">Modpack | Minecraft 1.15.2</p>
+                                            <h3 class="text-white fs-24 fw-600 text-uppercase">Age of Sorcery</h3>
+                                            <p class="font-grey fs-14">Modpack | Minecraft 1.12.2</p>
                                         </div>
                                         <div class="col-md-3">
-                                            <span class="bg-green status w-100 d-block mt-2">Online</span>
+                                            <span class="bg-orange status w-100 d-block mt-2">Coming Soon</span>
                                         </div>
                                         <div class="col-md-12">
-                                            <p class="text-white fs-18 lh-2">Aliquet venenatis, amet morbi pulvinar auctor molestie proin. Id dictum vulputate faucibus metus dolor id odio ac. </p>
+                                            <p class="text-white fs-18 lh-2">Age of Sorcery is an old JAC Classic styled Wizards Academy! With potions and magic and spells galour, how could there be, theres so much more! Coming very soon please stay tuned here! </p>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="button-sm-round float-left mr-4" >
                                                 <a href="" class="float-left" style="width: 300px;">
-                                                    jes.jac.network
+                                                    aos.jac.network
                                                     <span class="ml-3 bg-black d-inline-block status" style="width: 80px;">Copy</span>
                                                 </a>
                                             </div>
