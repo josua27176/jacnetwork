@@ -28,13 +28,13 @@
                                 <NuxtLink class="text-white" to="/">Home</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
-                                <NuxtLink class="text-white" to="https://forums.jac.network/">Forums</NuxtLink>
+                                <NuxtLink class="text-white" href="https://forums.jac.network/">Forums</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
                                 <NuxtLink class="text-white" to="/events">Events</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
-                                <NuxtLink class="text-white" to="https://store.jac.network/">Store</NuxtLink>
+                                <NuxtLink class="text-white" href="https://store.jac.network/">Store</NuxtLink>
                             </li>
                             <li class="mb-5 fs-18">
                                 <NuxtLink class="text-white" to="/">Videos</NuxtLink>
