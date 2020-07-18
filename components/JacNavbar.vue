@@ -6,10 +6,10 @@
             </a>
             <ul class="navbar-nav ml-auto d-none d-lg-flex">
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Home</NuxtLink></li>
-                <li class="nav-item mr-xl-5 mr-sm-3"><a href="https://forums.jac.network/">Forums</a></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><a href="https://forums.jac.network/" class="nav-link">Forums</a></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/servers" class="nav-link">Servers</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/events" class="nav-link">Events</NuxtLink></li>
-                <li class="nav-item mr-xl-5 mr-sm-3"><a href="https://store.jac.network/">Store</a></li>
+                <li class="nav-item mr-xl-5 mr-sm-3"><a href="https://store.jac.network/" class="nav-link">Store</a></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/votes" class="nav-link">Votes</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Support</NuxtLink></li>
                 <li class="nav-item button"><NuxtLink to="/" class="nav-link"><i class="fa fa-discord-alt mr-2" aria-hidden="true"></i>
