@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <img src="~assets/images/logo-light.svg" width="220px" alt="Jac Network" class="mb-3">
-                    <p class="fs-18 font-light lh-2 mb-4">At fermentum, nullam nam scelerisque proin quis ornare in. Id ut ac vitae enim scelerisque ac id.</p>
+                    <p class="fs-18 font-light lh-2 mb-4">A Modded Minecraft Gaming Community providing fun filled servers and unforgettable memories!</p>
                     <p class="fs-16 font-light lh-2 f-clarika">Designed by <a href="https://zyrl.space/" class="font-blue">Zyrl</a> & Developed by <a href="https://zyrl.space/" class="font-red">Ethan</a></p>
                 </div>
                 <div class="col-md-2 offset-md-1 mb-4">
