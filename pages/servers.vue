@@ -54,7 +54,7 @@
                         <div class="bg-dark rounded px-4 py-4 h-100">
                             <div class="row">
                                 <div class="col-10">
-                                    <h4 class="fs-20 font-green fw-600">3/30 Online Players</h4>
+                                    <h4 class="fs-20 font-green fw-600">N.a/30 Online Players</h4>
                                 </div>
                                 <div class="col-2">
                                     <a href="#" class="info">
@@ -113,7 +113,7 @@
                         <div class="bg-dark rounded px-4 py-4 h-100">
                             <div class="row">
                                 <div class="col-10">
-                                    <h4 class="fs-20 font-green fw-600">3/30 Online Players</h4>
+                                    <h4 class="fs-20 font-green fw-600">N.a/30 Online Players</h4>
                                 </div>
                                 <div class="col-2">
                                     <a href="#" class="info">
@@ -172,7 +172,7 @@
                         <div class="bg-dark rounded px-4 py-4 h-100">
                             <div class="row">
                                 <div class="col-10">
-                                    <h4 class="fs-20 font-green fw-600">3/30 Online Players</h4>
+                                    <h4 class="fs-20 font-green fw-600">N.a/30 Online Players</h4>
                                 </div>
                                 <div class="col-2">
                                     <a href="#" class="info">
@@ -231,7 +231,7 @@
                         <div class="bg-dark rounded px-4 py-4 h-100">
                             <div class="row">
                                 <div class="col-10">
-                                    <h4 class="fs-20 font-green fw-600">3/30 Online Players</h4>
+                                    <h4 class="fs-20 font-green fw-600">N.a/30 Online Players</h4>
                                 </div>
                                 <div class="col-2">
                                     <a href="#" class="info">
