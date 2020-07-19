@@ -7,8 +7,8 @@
                     <img src="~assets/images/nether.png" width="76px">
                 </div>
                 <div class="col-md-7">
-                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">HyWar Warfare</h4>
-                    <p class="fs-16 font-green">{{ HyWarCount }}/200 Playing!</p>
+                    <h4 class="fs-22 fw-600 font-white mt-3 mb-0">HyWar Modded Warfare</h4>
+                    <p class="fs-16 font-green">{{ HyWarCount }}/100 Playing!</p>
                 </div>
                 <div class="col-md-2">
                     <span class="bg-green status w-100 d-block mt-4">On</span>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-md-7">
                     <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Simply Pixel</h4>
-                    <p class="fs-16 font-green">{{ SimplyPixelCount }}/200 Playing!</p>
+                    <p class="fs-16 font-green">{{ SimplyPixelCount }}/100 Playing!</p>
                 </div>
                 <div class="col-md-2">
                     <span class="bg-green status w-100 d-block mt-4">On</span>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-7">
                     <h4 class="fs-22 fw-600 font-white mt-3 mb-0">Modded Hub</h4>
-                    <p class="fs-16 font-green">{{ ModHubCount }}/200 Playing!</p>
+                    <p class="fs-16 font-green">{{ ModHubCount }}/100 Playing!</p>
                 </div>
                 <div class="col-md-2">
                     <span class="bg-green status w-100 d-block mt-4">On</span>
