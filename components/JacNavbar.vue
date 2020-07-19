@@ -12,8 +12,8 @@
                 <li class="nav-item mr-xl-5 mr-sm-3"><a href="https://store.jac.network/" class="nav-link">Store</a></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/votes" class="nav-link">Votes</NuxtLink></li>
                 <li class="nav-item mr-xl-5 mr-sm-3"><NuxtLink to="/" class="nav-link">Support</NuxtLink></li>
-                <li class="nav-item button"><NuxtLink to="/" class="nav-link"><i class="fa fa-discord-alt mr-2" aria-hidden="true"></i>
-                 Discord </NuxtLink></li>
+                <li class="nav-item button"><a href="https://discord.gg/wBWBn2J" class="nav-link"><i class="fa fa-discord-alt mr-2" aria-hidden="true"></i>
+                 Discord </a></li>
             </ul>
             <div class="d-lg-none">
                 <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation" :class="{ 'is-active': displayMobileMenu }"  @click="toggleHamburger">
