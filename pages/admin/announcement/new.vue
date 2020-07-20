@@ -6,6 +6,8 @@
                 <form @submit.prevent="newEvent">
                     <label class="mb-3">Announcement Title:</label>
                     <input type="text" name="event_name" v-model="postTitle" class="mb-4">
+                    <label class="mb-3">Featured announcement?</label>
+                    <input type="checkbox" name="featured" v-model="postFeatured" class="mb-4" value="true">
                     <label class="mb-3">Announcement Description:</label>
                     <textarea v-model="postBody" rows="5" class="mb-5"></textarea>
                     <button type="submit" class="form-button bg-blue">Save</button>
@@ -22,6 +24,7 @@
         data() {
             return {
                 postTitle: '',
+                postFeatured: false,
                 postBody: '',
                 postDate: ''
             }
@@ -31,6 +34,7 @@
                 let token = this.$auth.getToken('local');
                 this.$axios.post('/posts', {
                         title: this.postTitle,
+                        featured: this.postFeatured,
                         body: this.postBody,
                     }, {
                         headers: {

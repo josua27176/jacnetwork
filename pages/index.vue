@@ -125,6 +125,7 @@ export default {
   data() {
     return {
       posts: [],
+      featured: [],
       serverIP: 'test',
     }
   },
@@ -142,6 +143,7 @@ export default {
             .then((res) => {
               this.posts = res.posts;
             })
+
   },
   methods: {
     postTime (value) {
