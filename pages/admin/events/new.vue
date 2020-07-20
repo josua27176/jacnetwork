@@ -10,6 +10,9 @@
                     <label class="mb-3">Event Start:</label>
                     <input type="datetime-local" class="mb-4" name="event_start" v-model="eventStart">
 
+                    <label class="mb-3">Event Featured:</label>
+                    <input type="checkbox" name="featured" v-model="eventFeatured" class="mb-4" value="true">
+
                     <label class="mb-3">Event Description:</label>
                     <textarea v-model="eventDescription" rows="5" class="mb-5"></textarea>
                     <button type="submit" class="form-button bg-blue">Save</button>
@@ -29,6 +32,7 @@
                 eventName: '',
                 eventDescription: '',
                 eventStart: '',
+                eventFeatured: false,
             }
         },
         methods: {
@@ -38,6 +42,7 @@
                     title: this.eventName,
                     body: this.eventDescription,
                     start: moment(this.eventStart).unix(),
+                    featured: this.eventFeatured
                     }, {
                         headers: {
                             Authorization: token

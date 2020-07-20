@@ -1,6 +1,6 @@
 <template>
     <swiper ref="JacEvents" :options="swiperOptions">
-        <swiper-slide v-for="event in events" :key="event.id">
+        <swiper-slide v-for="event in featured" :key="event.id">
             <div class="row">
                 <div class="col-4 col-md-3 mb-4">
                     <p class="text-white fs-16"><i aria-hidden="true" class="fa fa-asterisk mr-2"></i>Featured Event</p>
@@ -37,6 +37,7 @@
         data() {
             return {
                 events: [],
+                featured: [],
                 swiperOptions: {
                     loop: true,
                     slidesPerView: 'auto',
@@ -51,6 +52,11 @@
                 .$get(`/events`)
                 .then((res) => {
                     this.events = res.events;
+                })
+            this.$axios
+                .$get(`/events/featured`)
+                .then((res) => {
+                    this.featured = res;
                 })
         },
         methods: {
