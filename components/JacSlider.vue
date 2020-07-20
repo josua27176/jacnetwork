@@ -39,8 +39,8 @@
         data() {
             return {
                 swiperOptions: {
-                    loop: true,
-                    slidesPerView: 'auto',
+                    loop: false,
+                    slidesPerView: '1',
                     autoplay: {
                         delay: 3200,
                     }
