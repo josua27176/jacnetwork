@@ -1,5 +1,5 @@
 <template>
-    <swiper ref="mySwiper">
+    <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
             <div class="announcement-slide">
                 <img src="~assets/images/announcement-image.png" class="w-100">
@@ -75,6 +75,17 @@
         },
         directives: {
             swiper: directive
+        },
+        data() {
+            return {
+                swiperOptions: {
+                    loop: true,
+                    slidesPerView: 'auto',
+                    autoplay: {
+                        delay: 3200,
+                    }
+                }
+            }
         }
     }
 </script>
