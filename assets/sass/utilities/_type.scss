@@ -27,6 +27,7 @@ h1,h2,h3,h4,h5 {
 .fs-16 { font-size: 16px; }
 .fs-18 { font-size: 18px; }
 .fs-20 { font-size: 20px; }
+.fs-22 { font-size: 22px; }
 .fs-24 { font-size: 24px; }
 .fs-30 { font-size: 30px; }
 .fs-36 {
@@ -112,4 +113,12 @@ a { cursor: pointer !important; }
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+a:hover{
+text-decoration: none !important;
 }

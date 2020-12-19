@@ -21,4 +21,20 @@ body {
  top: -120px
 }
 
+.navbar-brand {
+ 
+  padding-top: 0.0rem !important;
+  padding-bottom: 0.6125rem !important;
+}
+@media(max-width:972px){
+  .navbar-brand {
+    padding-top: 0.0rem !important;
+    padding-bottom: 0rem !important;
+  }
+}
+
 @import "utilities/responsive";
+
+
+// vote page
+@import './components/vote/votes';

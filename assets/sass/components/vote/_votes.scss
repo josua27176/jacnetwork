@@ -1,0 +1,12 @@
+@media(max-width:514px){
+  .votes .container{
+    width: 95% !important;
+  }
+}
+@media(max-width:360px){
+  .votes .container{
+    width: 98% !important;
+  }
+}
+@import './herosection';
+@import './votesSection';

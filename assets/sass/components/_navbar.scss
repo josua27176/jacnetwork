@@ -57,17 +57,18 @@
 }
 
 .hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px;
-  width: 30px;
-  height: 2px;
-  background-color: $white;
-  border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
+    display: block;
+    top: 4px !important;
+    margin-top: 0px;
+    width: 30px;
+    height: 2px;
+    left: 4px;
+    background-color: #FFF;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
 
   &::before, &::after {
     width: 30px;
